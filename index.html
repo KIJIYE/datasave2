@@ -1,0 +1,303 @@
+<!doctype html>
+
+
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="sketch.js"></script>
+    <div id="myContainer"> </div>
+
+    <title>🔺</title>
+        <link rel="icon" type="image/ico" href="logokiji.png" />
+         <!-- you can also say this:
+          <link rel="icon" type="image/png" href="location/image.png" /> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" type="text/javascript" src="p5.js"></script>
+    <!-- uncomment lines below to include extra p5 libraries -->
+    <script language="javascript" src="addons/p5.dom.js"></script>
+    <!--<script language="javascript" src="js/addons/p5.sound.js"></script>-->
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+    <style>
+
+
+      [title~=INDEX.IMG] {
+        border: 1px none red;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .BLUELIGHT {
+        margin-left: 60%;
+        margin-right: auto;
+      }
+      .dotborder {
+        border: 30px dotted hotpink;
+        padding: 30px;
+        background: none;
+        margin-left: 200px;
+        margin-right: 200px;
+        height: 500px;
+        margin-top: -100px;
+      }
+
+      body {
+        background-image: url("MVI_7621.gif");
+        background-size: 400px;
+      }
+
+      /* childlist 하위 항목 링크들 */
+      #childlist {
+        color: rgb(0, 0, 255);
+        text-decoration:none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-shadow: -10px 0 rgb(0, 255, 0), 0 10px rgb(0, 255, 0), 10px 0 rgb(0, 255, 0), 0 -10px rgb(0, 255, 0);
+        font-size: 20px;
+      }
+
+
+      h1 {
+        font-size: 70px;
+        text-align:center;
+        font-family: arial;
+        color: white;
+        text-shadow: -5px 0 rgb(104, 52, 128), 0 5px rgb(104, 52, 128), 5px 0 rgb(104, 52, 128), 0 -5px rgb(104, 52, 128);
+      }
+      /* 이거 h1 관련한 링크 밑줄 없애기 관련 start*/
+      a:link {
+        text-decoration: none;
+        color: #f4ffff;
+      }
+      a:visited {
+        text-decoration: none;
+        color: #f4ffff;
+      }
+      a:active {
+        text-decoration: none;
+        color: #f4ffff;
+      }
+      a: hover {
+        text-decoration: none;
+        color: #f4ffff;
+      }
+      /* 이거 h1 관련한 링크 밑줄 없애기 관련 finish */
+
+      .fonttest {
+        background-color: green;
+      }
+
+      table {
+        width : 100%;
+      }
+      @media screen and (min-width: 800px){
+        table{
+          width: 90%;
+        }
+      }
+      @media screen and (min-width: 1000px) {
+        table {
+          width: 80%;}
+        }
+
+      table, th, td {
+        font-family: "Noto Sans";
+        font-weight: 700;
+        border: 1px solid black;
+        text-align: center;
+      }
+      /* hover 사용하면 table의 tr 위 마우스 올라갔을시 색 변경가능 */
+      tr:hover {
+        background-color: green;
+      }
+      th {
+        padding: 20px;
+      }
+
+      td {
+        padding: 30px;
+      }
+
+      li {
+        display: block;
+      }
+
+
+      .button123{
+        text-align: center;
+      }
+      .button{
+        position: absolute;
+        top: 50%;
+      }
+      .button: hover{
+        background-color: blue;
+      }
+
+      .rainbow {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%
+        background-color: #3264bc;
+        position: relative;
+        object-position: center;
+        animation-name: example;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes example {
+        0% {background-color: red; left: 0%; }
+        25% {background-color: purple; left: 50%; }
+        50% {background-color: yellowgreen; left: 100%}
+        75% {background-color: blue; left: 50%;}
+        100% {background-color: white; left: 0%;}
+      }
+
+      h3 {
+        margin-left: 15%;
+        margin-right: 15%;
+        //text-shadow: 13px 0 rgb(255, 0, 0), 0 -13px rgb(255, 0, 0), -13px 0 rgb(255, 0, 0), 0 13px rgb(255, 0, 0);
+      }
+
+      .CIRCLE{
+        margin-left: 10%
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+   <div>
+    <h1><a href="index.html">🔺</a></h1>
+  </div>
+
+    <div class="button123">
+    <button type="button" onclick="document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='red';" id="button1">⚪</button>
+
+    <button type="button" onclick="document.querySelector('body').style.backgroundColor='red';
+    document.querySelector('body').style.color='white';" id="button1">🟢🔵🟣🔴</button>
+
+      <a href="contact.html" id="button1"><button>CONTACT</button></a>
+
+    </div>
+
+    <br><br><br>
+
+      <ul>
+        <br><li><a href="1.html" id="childlist"><strong>
+
+          <h3>집에 고양이 한 마리가 있는데, 이 고양이는 베란다의 햇볕을 좋아한다.
+          따뜻함을 좋아하는데
+          그중에서도 햇볕에 데워진 타일 바닥의 맨들거리는 느낌을 좋아한다.
+          이 고양이는 노트북 속의 한 페이지에 갇혀 반복적으로 움직이고 있다.
+          이 고양이는 그 페이지의 길이가 늘어나는 만큼 수가 기하급수적으로 늘어나는데
+          몇 마리인지 도저히 모르겠다.
+          페이지를 스크롤하는 만큼 고양이의 수는 늘어난다.
+          이 고양이는 하늘을 바라보는 것인지 페이지 속의 별들을 바라보는 것인지 천장을
+          바라보는 것인지
+          정확하게 무엇을 바라보는지 알 수 없지만,
+          위를 보고 아래를 보고 다시 위를 보고 아래를 바라보는 행동을 반복한다.
+          이 고양이는 물에 떨어지는 어떤 먼지 하나를 보게 되는데
+          그 먼지는 자신의 털인지 아니면 같이 살고 있는 다른 고양이의 털인지 아니면
+          같이 살고 있는
+          인간의 털인지 모르겠지만, 그 먼지는 바람에 따라 움직이고 있다.
+          이 고양이의 바라보는 지점을 보건대 위에서 아래로 떨어진다는 것만 알 수 있다.
+          그것은 물 위로 떨어져 표면에 떠 있게 되는데, 물은 먼지의 무게로 인해
+          약간의 흔들림과 함께 다시 잠잠해진다. 순간, 이 먼지는 사라지고 어느새
+          다시 공중에서 떨어지고 있다. 이 고양이도 순간적으로 다시 위를 바라본다.
+          이 과정은 계속 반복된다. 이곳은 집이다. 이 고양이의 집이다.
+          이 집에는 폭이 좁은 거실 베란다가 있다. 좁지만 그래도 이 베란다에는 햇볕이
+          잘 들어온다.
+          밖으로 나갈 수 없는 사람과 고양이들은 거실 베란다로 나와 밖의 해와 햇빛을 바라보고
+          그러면서 다음엔 마스크를 쓰고 지나가는 사람들을 바라본다. 낮은 층에 위치했기
+          때문에 사람이 큰 목소리로 말하면 그 내용이 들린다. 오늘은 주차 문제로 싸우는
+          것 같은 사람을 보았다.
+          이 집에 살고있는 사람은 커피를 마시며 그리고 이 고양이와 그와 같이 살고 있는
+          다른 고양이 즉, 고양이 두 마리는 간식을 받아먹으며 하루 동안 해야 하는
+          잠깐의 광합성 시간을 가지며 따스함을 느낀다.
+          이 고양이는 물이 흔들리는 것을 계속해서 반복한다. 고양이 행동이 반복하는 것을
+          눈치채고 페이지 속의 별 세 개는 각기 다른 속도로 계속해서 계속해서 계속해서 오른쪽 오른쪽 왼쪽으로
+          돌고 있다. 그중 중간에 위치한 별을 마우스로 클릭하게 되면 색이 변하는 것은 알고 있다.
+          아마 고양이는 다른 사람이 그것을 눌러보게 하려고 위를 쳐다보는 것을 반복하고 있는 것일지도 모른다.
+          집에 고양이 한 마리가 있는데, 이 고양이는 베란다의 햇볕을 좋아한다.
+          따뜻함을 좋아하는데
+          그중에서도 햇볕에 데워진 타일 바닥의 맨들거리는 느낌을 좋아한다.
+          이 고양이는 노트북 속의 한 페이지에 갇혀 반복적으로 움직이고 있다.
+          이 고양이는 그 페이지의 길이가 늘어나는 만큼 수가 기하급수적으로 늘어나는데
+          몇 마리인지 도저히 모르겠다.
+          페이지를 스크롤하는 만큼 고양이의 수는 늘어난다.
+          이 고양이는 하늘을 바라보는 것인지 페이지 속의 별들을 바라보는 것인지 천장을
+          바라보는 것인지
+          정확하게 무엇을 바라보는지 알 수 없지만,
+          위를 보고 아래를 보고 다시 위를 보고 아래를 바라보는 행동을 반복한다.
+          이 고양이는 물에 떨어지는 어떤 먼지 하나를 보게 되는데
+          그 먼지는 자신의 털인지 아니면 같이 살고 있는 다른 고양이의 털인지 아니면
+          같이 살고 있는
+          인간의 털인지 모르겠지만, 그 먼지는 바람에 따라 움직이고 있다.
+          이 고양이의 바라보는 지점을 보건대 위에서 아래로 떨어진다는 것만 알 수 있다.
+          그것은 물 위로 떨어져 표면에 떠 있게 되는데, 물은 먼지의 무게로 인해
+          약간의 흔들림과 함께 다시 잠잠해진다. 순간, 이 먼지는 사라지고 어느새
+          다시 공중에서 떨어지고 있다. 이 고양이도 순간적으로 다시 위를 바라본다.
+          이 과정은 계속 반복된다. 이곳은 집이다. 이 고양이의 집이다.
+          이 집에는 폭이 좁은 거실 베란다가 있다. 좁지만 그래도 이 베란다에는 햇볕이
+          잘 들어온다.
+          밖으로 나갈 수 없는 사람과 고양이들은 거실 베란다로 나와 밖의 해와 햇빛을 바라보고
+          그러면서 다음엔 마스크를 쓰고 지나가는 사람들을 바라본다. 낮은 층에 위치했기
+          때문에 사람이 큰 목소리로 말하면 그 내용이 들린다. 오늘은 주차 문제로 싸우는
+          것 같은 사람을 보았다.
+          이 집에 살고있는 사람은 커피를 마시며 그리고 이 고양이와 그와 같이 살고 있는
+          다른 고양이 즉, 고양이 두 마리는 간식을 받아먹으며 하루 동안 해야 하는
+          잠깐의 광합성 시간을 가지며 따스함을 느낀다.
+          이 고양이는 물이 흔들리는 것을 계속해서 반복한다. 고양이 행동이 반복하는 것을
+          눈치채고 페이지 속의 별 세 개는 각기 다른 속도로 계속해서 계속해서 계속해서 오른쪽 오른쪽 왼쪽으로
+          돌고 있다. 그중 중간에 위치한 별을 마우스로 클릭하게 되면 색이 변하는 것은 알고 있다.
+          아마 고양이는 다른 사람이 그것을 눌러보게 하려고 위를 쳐다보는 것을 반복하고 있는 것일지도 모른다.
+        </h3>
+
+        </strong></a></li>
+      </ul>
+
+
+
+
+    <br>
+    <P>
+
+    </P>
+
+    <br>
+    <br>
+    <br>
+
+<!--
+    <ul>
+      <br><li><a href="1.html"><font color="orange"><strong>단기임대</strong></font></a></li>
+      <li><a href="2.html"><font color="orange"><strong>보라곰팡이</strong></font></a></li>
+      <li><a href="3.html"><font color="orange"><strong>비장소</strong></font></a></li>
+    </ul>
+-->
+
+        <p>
+          <img src="HOME.png" class="CIRCLE width="800px" height="560px">
+          <div class="dotborder" ></div>
+        </p>
+
+        <div class="rainbow">
+        </div>
+
+<p><div id="disqus_thread"></div>
+
+
+
+
+
+  </body>
+</html>
